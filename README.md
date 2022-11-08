@@ -4,6 +4,7 @@ Based on [dirkarnez/mp4v2-playground](https://github.com/dirkarnez/mp4v2-playgro
 
 ### Using
 - [dirkarnez/mp4v2-prebuilt](https://github.com/dirkarnez/mp4v2-prebuilt)
+- [dirkarnez/x264-prebuilt](https://github.com/dirkarnez/x264-prebuilt)
 
 ### Reference
 - [图像RGB2YUV与YUV2RGB格式互转介绍_kenneth_的博客-CSDN博客](https://blog.csdn.net/kenneth_/article/details/51585182)'
