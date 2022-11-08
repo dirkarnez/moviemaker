@@ -1,12 +1,11 @@
 #include "string.h"
 #include "cMp4Encode.h"
 
-// Ã½ÌåÖ¡ÀàÐÍ
 typedef enum MEDIA_FRAME_TYPE
 {
     MEDIA_FRAME_UNVALID	= 0,
-    MEDIA_FRAME_VIDEO	= 1,// ÒôÆµ
-    MEDIA_FRAME_AUDIO	= 2// ÊÓÆµ
+    MEDIA_FRAME_VIDEO	= 1,
+    MEDIA_FRAME_AUDIO	= 2
 }MEDIA_FRAME_TYPE_E;
 
 CMp4Encode::CMp4Encode(void):
@@ -106,7 +105,7 @@ int CMp4Encode::WriteVideoTrack(unsigned char *pframeBuf,int frameLen)
             if (m_bfindSps)
                 goto continue_pos;
 
-            // Ìí¼Óh264 track
+            // ï¿½ï¿½ï¿½ï¿½h264 track
             m_videoId = MP4AddH264VideoTrack
                 (hMp4File,
                 m_nTimeScale,
@@ -144,7 +143,7 @@ int CMp4Encode::WriteVideoTrack(unsigned char *pframeBuf,int frameLen)
 
             int datalen = nalu.frameLen+4;
             unsigned char *data = new unsigned char[datalen];
-            // MP4 NaluÇ°ËÄ¸ö×Ö½Ú±íÊ¾Nalu³¤¶È
+            // MP4 NaluÇ°ï¿½Ä¸ï¿½ï¿½Ö½Ú±ï¿½Ê¾Naluï¿½ï¿½ï¿½ï¿½
             data[0] = nalu.frameLen>>24;
             data[1] = nalu.frameLen>>16;
             data[2] = nalu.frameLen>>8;

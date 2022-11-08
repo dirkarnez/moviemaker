@@ -1,8 +1,8 @@
 //
 #pragma once  
-#include "mp4v2.h"
+#include <mp4v2/mp4v2.h>
 #include <Windows.h>
-#pragma comment(lib,"libmp4v2.lib")
+// #pragma comment(lib,"libmp4v2.lib")
 //
 #define  _NALU_SPS_  0
 #define  _NALU_PPS_  1
@@ -22,5 +22,5 @@ private:
 	int m_vWidth,m_vHeight,m_vFrateR,m_vTimeScale;
 	MP4FileHandle m_mp4FHandle;
 	MP4TrackId m_vTrackId,m_aTrackId;
-	double m_vFrameDur;										  // Í¨¹ýaudio frame¼ÆËãµÄÁ½¸öÊÓÆµÖ¡¼äµÄ¼ä¸ô£¬µ¥Î»Îª 1s/44100
+	double m_vFrameDur;										  // Í¨ï¿½ï¿½audio frameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÆµÖ¡ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»Îª 1s/44100
 };

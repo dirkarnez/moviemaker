@@ -1,9 +1,9 @@
 #ifndef CMP4ENCODE_H
 #define CMP4ENCODE_H
 
-#include "./inc/mp4v2/mp4v2.h"
+#include <mp4v2/mp4v2.h>
 
-// NALUµ¥Ôª
+// NALUï¿½ï¿½Ôª
 typedef struct _MP4ENC_NaluUnit
 {
     int frameType;
